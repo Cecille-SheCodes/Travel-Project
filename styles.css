@@ -115,6 +115,9 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+main img {
+margin: 0 auto;
+}
 
 .card {
   background: white;
@@ -153,6 +156,17 @@ section.secondary {
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
+}
+.instagram-embeds {
+  margin: 30px auto;
+  display:flex;
+  justify-content: center;
+}
+
+.instagram-media{
+max-width:50%;
+margin:auto;
+padding:auto;
 }
 footer {
   color: white;
@@ -197,7 +211,7 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1077px) {
   header {
     padding: 60px 0;
   }
@@ -216,7 +230,7 @@ footer a {
 
     .grid {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+    grid-gap: 25px;
   }
 
   section {
@@ -229,4 +243,7 @@ footer a {
   .embed {
     aspect-ratio: 16 / 9;
 }
+}
+
+
 
