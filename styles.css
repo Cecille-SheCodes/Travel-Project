@@ -11,7 +11,12 @@ body {
   display: grid;
   grid-gap: 30px;
 }
-
+.main-grid {
+  grid-template-columns: 1fr 2fr;
+}
+.secondary-grid{
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .footer-grid
 {
     grid-template-columns: 1fr 2fr 2fr;
@@ -19,15 +24,9 @@ body {
 .img-fluid {
   max-width: 100%;
 }
-
-.main-grid {
-  grid-template-columns: 1fr 2fr;
+.text-center{
+  text-align: center;
 }
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 header {
   background-image: linear-gradient(rgba(40, 33, 69, 0.8), rgba(0, 0, 0, 0.6)),
     url("images/bishkek-kyrgyzstan.jpg");
@@ -74,6 +73,11 @@ header a {
   text-transform: uppercase;
   background: white;
 }
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
 main {
   background-color: white;
   padding: 30px;
@@ -107,32 +111,36 @@ main p {
   opacity: 0.7;
 }
 
-
-@media (max-width: 900px) {
-  header {
-    padding: 60px 0;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
-    .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-
-  section {
-    padding: 30px;
+.card {
+  background: white;
+  margin: 30px 0;
 }
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
+
+section.secondary {
+  background: #f8f8f8;
 }
 
 footer {
@@ -177,3 +185,31 @@ footer a {
   opacity: 0.7;
   text-decoration: none;
 }
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+    .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+}
+}
+
